@@ -1,3 +1,4 @@
+#第一題目
 # printMany();
 # // 1
 # // 2
@@ -7,7 +8,7 @@
 # for i in range(1,101):
 #     print(i)
 # ---------------------------------
-
+#第二題目
 # printEvery3();
 # // 1
 # // 4
@@ -17,14 +18,14 @@
 # for i in range(1,89,3):
 #     print(i)
 #-----------------------------------
-
+#第三題目
 # stars(3); // ***
 # stars(10); // **********
 
 # s = int(input('想要幾顆星? '))
 # print('*' * s)
 #-----------------------------------
-
+#第四題目
 # isUpperCase("ABCD"); // returns true
 # isUpperCase(""); // returns false
 # isUpperCase("aBCD"); // returns false
@@ -37,7 +38,7 @@
 # else:
 #     print('True')
 #-----------------------------------
-
+#第五題目
 # isAllUpperCase("ABCD"); // returns true
 # isAllUpperCase(""); // returns false
 # isAllUpperCase("ABCDEFGHIJKLm"); // returns false
@@ -45,11 +46,11 @@
 # s = " "
 # print(s.isupper())
 #-----------------------------------
-
+#第六題目
 # position("abcd"); // prints -1
 # position("AbcD"); // prints A 0
 # position("abCD"); // prints C 2
-
+#暴力解法
 # s = "abcsDdf"
 # word = ['Q','A','Z','X','S','W','E','D','C','V','F','R','T','G','B','N','H','Y','U','J','M','K','I','O','L','P']
 # box=[]
@@ -59,7 +60,7 @@
 #             k = box.append(i)
 
 # print(box[0] , s.index(box[0]))
-
+#正常解法
 # s = "bcsdf"
 
 # for i in range(len(s)):
@@ -70,7 +71,7 @@
 #        print(s[i] , i)
 #        break
 #-----------------------------------
-
+#第七題目
 # findSmallCount([1, 2, 3], 2); // returns 1
 # findSmallCount([1, 2, 3, 4, 5], 0); // returns 0
 
@@ -84,7 +85,7 @@
 
 # findSmallCount([1, 2, 3], 0)
 #-----------------------------------
-
+#第八題目
 # findSmallerTotal([1, 2, 3], 3) // returns 3
 # findSmallerTotal([1, 2, 3], 1) // returns 0
 # findSmallerTotal([3, 2, 5, 8, 7], 999) // returns 25
@@ -99,7 +100,7 @@
 
 # findSmallerTotal([3, 2, 5, 8, 7], 0)
 #-----------------------------------
-
+#第九題目
 # findAllSmall([1, 2, 3], 10); // returns [1, 2, 3]
 # findAllSmall([1, 2, 3], 2); // returns [1]
 # findAllSmall([1, 3, 5, 4, 2], 4); // returns [1, 3, 2]
@@ -113,7 +114,7 @@
 
 # findAllSmall([1, 3, 5, 4, 2], 4)
 #-----------------------------------
-
+#第十題目
 # sum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]); // returns 55
 # sum([]); // return 0
 # sum([-10, -20, -30]); // return -60
@@ -126,7 +127,7 @@
 
 # sum([])
 #-----------------------------------
-
+#第十一題目
 # stars(1);
 # // *
 # stars(4);
@@ -141,7 +142,7 @@
 
 # stars(1)
 #-----------------------------------
-
+#第十二題目
 # makeStars(1);
 # // *
 # makeStars(2);
@@ -158,7 +159,7 @@
 
 # makeStars(5)
 #-----------------------------------
-
+#第十三題目
 # stars2(1);
 # // *
 # stars2(2);
@@ -183,16 +184,16 @@
 # def stars(num):
 #     box = []
 #     for i in range(num):
-#         if i < num :
+#         if i < num : #滿足輸入的數字以後
 #             box.append(i)
 #             print('*' * (i+1))
-#     for i in box[::-1]:
+#     for i in box[::-1]: #從滿足的數字開始 -1的跑回
 #         if i == 0:
 #             break
 #         print('*' * i)
 # stars(10)
 #-----------------------------------
-
+#第十四題目
 # table(3);
 # // 3 x 1 = 3
 # // 3 x 2 = 6
@@ -204,7 +205,7 @@
 #         print(num,'x' , i , '=' , num*i)
 # table(9)
 #-----------------------------------
-
+#第十五題目
 # table9to9();
 # // 1 x 1 = 1
 # // 1 x 2 = 2
@@ -223,13 +224,14 @@
 
 # table9to9()
 #-----------------------------------
- 
+ #第十六題目
 #  fib(0); // returns 0
 # fib(1); // returns 1
 # fib(2); // returns 1
 # fib(3); // returns 2
 # fib(8); // returns 21
 
+#斐波那契數 第八階 = 第七階 + 第六階     前兩階數相加
 # def fib(num):
 #     box = [0,1]
 #     if num == 0:
